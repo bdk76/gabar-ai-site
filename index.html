@@ -1,276 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gabar AI — The AI Front Office for Healthcare</title>
-  <meta name="description" content="HIPAA-aware, EMR-integrated AI that answers every call and books every appointment—24/7.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabar AI — AI Front Office</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">
-        <span class="logo">Gabar<span class="accent">AI</span></span>
-        <img class="brandmark" src="assets/logo.png" alt="Gabar AI logo" />
-      </div>
-      <nav class="nav-links">
-        <a href="#how">How It Works</a>
-        <a href="#services">Services</a>
-        <a href="#compare">Compare</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#integrations">Integrations</a>
-        <a href="#contact" class="btn btn-primary">Get a Demo</a>
-      </nav>
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <span class="logo">Gabar<span class="accent">AI</span></span>
+      <img class="brandmark" src="assets/logo.png" alt="Gabar AI logo" />
     </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>The AI Front Office for Healthcare</h1>
-          <p class="sub">HIPAA-aware, EMR-integrated AI that answers every call and books every appointment—24/7.</p>
-          <div class="cta-row">
-            <a href="#contact" class="btn btn-primary">Get a Demo</a>
-            <a href="#pricing" class="btn btn-secondary">Compare Pricing</a>
-          </div>
-          <ul class="trust-bullets">
-            <li>No hold music</li>
-            <li>EMR write-back</li>
-            <li>Patient-friendly voice</li>
-          </ul>
-        </div>
-        <div class="hero-art">
-          <svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How Gabar AI handles patient calls">
-            <defs>
-              <style>
-                .card{fill:#ffffff;stroke:#E5E7EB;stroke-width:2;rx:18;ry:18}
-                .title{font:700 28px Inter, Arial, sans-serif;fill:#0F172A}
-                .step{font:600 20px Inter, Arial, sans-serif;fill:#111827}
-                .sub{font:400 16px Inter, Arial, sans-serif;fill:#374151}
-                .arrow{stroke:#94A3B8;stroke-width:2;marker-end:url(#arrowHead)}
-              </style>
-              <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
-              </marker>
-            </defs>
-            <text x="450" y="40" text-anchor="middle" class="title">How It Works — No Hold Music, Ever</text>
-            <rect class="card" x="80" y="70" width="740" height="90"/>
-            <text x="120" y="110" class="step">1) We Answer</text>
-            <text x="120" y="140" class="sub">24/7 friendly AI picks up first ring</text>
-            <line x1="450" y1="160" x2="450" y2="200" class="arrow"/>
-            <rect class="card" x="80" y="200" width="740" height="90"/>
-            <text x="120" y="240" class="step">2) We Handle It</text>
-            <text x="120" y="270" class="sub">Book appointments, answer FAQs, update insurance</text>
-            <line x1="450" y1="290" x2="450" y2="330" class="arrow"/>
-            <rect class="card" x="80" y="330" width="740" height="90"/>
-            <text x="120" y="370" class="step">3) You See It</text>
-            <text x="120" y="400" class="sub">Confirmed bookings show up in your EMR</text>
-            <line x1="450" y1="420" x2="450" y2="460" class="arrow"/>
-            <rect class="card" x="80" y="460" width="740" height="90"/>
-            <text x="120" y="500" class="step">4) Always Compliant</text>
-            <text x="120" y="530" class="sub">HIPAA-aware flows; PHI handled via secure, BAA-covered systems</text>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section">
-      <div class="container">
-        <h2 class="section-title">How It Works — Patient Friendly</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="icon">📞</div>
-            <h3>We Answer</h3>
-            <p>Patients reach a friendly AI receptionist, 24/7.</p>
-          </div>
-          <div class="step">
-            <div class="icon">✅</div>
-            <h3>We Handle It</h3>
-            <p>Book appointments, answer FAQs, update insurance.</p>
-          </div>
-          <div class="step">
-            <div class="icon">🗓️</div>
-            <h3>You See It</h3>
-            <p>Confirmed bookings appear in your EMR in real time.</p>
-          </div>
-          <div class="step">
-            <div class="icon">🔐</div>
-            <h3>Always Compliant</h3>
-            <p>HIPAA-aware flows; PHI handled only via secure, BAA-covered systems.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2 class="section-title">What We Do</h2>
-        <p class="sub">End-to-end front-office coverage so your clinicians can focus on care.</p>
-        <ul class="services">
-          <li>Call answering (24/7)</li>
-          <li>Appointment booking & rescheduling</li>
-          <li>Outbound reminders & information gathering</li>
-          <li>EMR write-back (real-time updates)</li>
-          <li>Practice, non-healthcare FAQs & directions</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- DIFFERENTIATION -->
-    <section id="compare" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Gabar AI vs. Traditional Call Centers</h2>
-        <div class="table-wrap">
-          <table class="compare">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>Gabar AI</th>
-                <th>Traditional</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Avg Cost/Minute</td><td>$0.65–$0.95</td><td>$1.15–$1.95</td></tr>
-              <tr><td>24/7 Availability</td><td>Included</td><td>Extra after-hours</td></tr>
-              <tr><td>EMR/EHR Integration</td><td>Real-time write-back</td><td>Manual entry or delayed</td></tr>
-              <tr><td>Hold Times</td><td>None</td><td>Common</td></tr>
-              <tr><td>Insurance Eligibility</td><td>AI-assisted on call</td><td>Rarely supported</td></tr>
-              <tr><td>Setup Time</td><td>&lt; 48 hours</td><td>2–4 weeks</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section">
-      <div class="container">
-        <h2 class="section-title">Transparent, Scalable Pricing</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Starter</h3>
-            <p class="mins"><strong>500</strong> minutes / mo</p>
-            <p class="price">$475 <span class="per">($0.95/min)</span></p>
-            <ul>
-              <li>24/7 AI receptionist</li>
-              <li>Basic FAQs</li>
-              <li>Email notifications</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Growth</h3>
-            <p class="mins"><strong>1,000</strong> minutes / mo</p>
-            <p class="price">$850 <span class="per">($0.85/min)</span></p>
-            <ul>
-              <li>EMR updates</li>
-              <li>Appointment booking</li>
-              <li>SMS/email confirms</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Pro</h3>
-            <p class="mins"><strong>2,500</strong> minutes / mo</p>
-            <p class="price">$1,875 <span class="per">($0.75/min)</span></p>
-            <ul>
-              <li>Eligibility checks</li>
-              <li>Advanced FAQs</li>
-              <li>Priority support</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Enterprise</h3>
-            <p class="mins"><strong>5,000</strong> minutes / mo</p>
-            <p class="price">$3,250 <span class="per">($0.65/min)</span></p>
-            <ul>
-              <li>SLA & on-call escalation</li>
-              <li>Custom reporting</li>
-              <li>Multi-location routing</li>
-            </ul>
-          </article>
-        </div>
-        <p class="note">Need &gt; 5,000 minutes? <a href="#contact">Contact Sales</a> — volume pricing available.</p>
-      </div>
-    </section>
-
-    <!-- OUTCOMES -->
-    <section id="outcomes" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Built for 5–10 Physician Practices</h2>
-        <p class="sub">Solve the staffing and satisfaction crunch while cutting cost per minute.</p>
-        <div class="stats-grid">
-          <div class="stat">
-            <div class="num">4.4<span class="unit">min</span></div>
-            <div class="cap">Avg. hold time with human-only centers</div>
-          </div>
-          <div class="stat">
-            <div class="num">60<span class="unit">% </span></div>
-            <div class="cap">Typical staffing coverage at peak hours</div>
-          </div>
-          <div class="stat">
-            <div class="num">8<span class="unit">min</span></div>
-            <div class="cap">Avg. time to schedule by phone</div>
-          </div>
-          <div class="stat">
-            <div class="num lt">≤5<span class="unit">% </span></div>
-            <div class="cap">Abandon rate target for top centers</div>
-          </div>
-        </div>
-        <ul class="benefits">
-          <li>Lower patient wait times → higher satisfaction</li>
-          <li>AI handles routine + reminders; staff focus on higher-value work</li>
-          <li>Real-time EMR write-back reduces after-call work</li>
-          <li>Outbound reminders cut no-shows and task backlog</li>
-          <li>Employee engagement improves when phones aren’t on fire</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- INTEGRATIONS -->
-    <section id="integrations" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Plug and Play with Your EMR</h2>
-        <div class="logo-row">
-          <div class="logo">Athenahealth</div>
-          <div class="logo">eClinicalWorks</div>
-          <div class="logo">AdvancedMD</div>
-          <div class="logo">Cerner</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Book a Demo</h2>
-        <p class="sub small">We do not collect PHI on this page. PHI forms are handled by HIPAA-compliant partners under BAA.</p>
-        <div class="embed">
-          <!-- Replace the iframe src with your HIPAA form provider (e.g., Jotform HIPAA/Formstack HIPAA) -->
-          <iframe title="Request a Demo" src="about:blank" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container foot">
-      <p>© <span id="y"></span> Gabar AI · All rights reserved.</p>
-      <nav>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="mailto:info@gabar.ai">Contact</a>
-      </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>The AI Front Office for Healthcare</h1>
+      <p class="sub">Customized Solution Built for Up To <strong>25 Physician Practices</strong></p>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <div class="hero-art big-workflow">
+      <svg viewBox="0 0 900 640" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+            .card{fill:#fff;stroke:#E5E7EB;stroke-width:2;rx:20;ry:20}
+            .title{font:700 36px Inter,Arial,sans-serif;fill:#0F172A}
+            .step{font:700 24px Inter,Arial,sans-serif;fill:#111827}
+            .sub{font:400 18px Inter,Arial,sans-serif;fill:#374151}
+            .arrow{stroke:#94A3B8;stroke-width:3;marker-end:url(#arrowHead)}
+          </style>
+          <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+          </marker>
+        </defs>
+        <text x="450" y="50" text-anchor="middle" class="title">How It Works — No Hold Music, Ever</text>
+        <rect class="card" x="80" y="80" width="740" height="110"/>
+        <text x="120" y="120" class="step">1) We Answer</text>
+        <text x="120" y="150" class="sub">24/7 friendly AI picks up first ring</text>
+        <line x1="450" y1="190" x2="450" y2="220" class="arrow"/>
+        <rect class="card" x="80" y="220" width="740" height="110"/>
+        <text x="120" y="260" class="step">2) We Handle It</text>
+        <text x="120" y="290" class="sub">Book appointments, answer FAQs, update insurance</text>
+        <line x1="450" y1="310" x2="450" y2="340" class="arrow"/>
+        <rect class="card" x="80" y="340" width="740" height="110"/>
+        <text x="120" y="380" class="step">3) You See It</text>
+        <text x="120" y="410" class="sub">Confirmed bookings show up in your EMR</text>
+        <line x1="450" y1="430" x2="450" y2="460" class="arrow"/>
+        <rect class="card" x="80" y="460" width="740" height="110"/>
+        <text x="120" y="500" class="step">4) Always Compliant</text>
+        <text x="120" y="530" class="sub">HIPAA-aware flows; PHI handled via secure, BAA-covered systems</text>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
 </body>
 </html>
