@@ -10,25 +10,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Gabar AI",
-    "url":"https://www.gabar.ai",
-    "sameAs":[],
-    "logo":"assets/logo-placeholder.svg"
-  }
-  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <div class="brand">
         <span class="logo">Gabar<span class="accent">AI</span></span>
+        <img class="brandmark" src="assets/logo.png" alt="Gabar AI logo" />
       </div>
       <nav class="nav-links">
         <a href="#how">How It Works</a>
+        <a href="#services">Services</a>
         <a href="#compare">Compare</a>
         <a href="#pricing">Pricing</a>
         <a href="#integrations">Integrations</a>
@@ -55,7 +47,36 @@
           </ul>
         </div>
         <div class="hero-art">
-          <img src="assets/workflow.svg" alt="How Gabar AI handles patient calls" loading="lazy" />
+          <svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How Gabar AI handles patient calls">
+            <defs>
+              <style>
+                .card{fill:#ffffff;stroke:#E5E7EB;stroke-width:2;rx:18;ry:18}
+                .title{font:700 28px Inter, Arial, sans-serif;fill:#0F172A}
+                .step{font:600 20px Inter, Arial, sans-serif;fill:#111827}
+                .sub{font:400 16px Inter, Arial, sans-serif;fill:#374151}
+                .arrow{stroke:#94A3B8;stroke-width:2;marker-end:url(#arrowHead)}
+              </style>
+              <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+              </marker>
+            </defs>
+            <text x="450" y="40" text-anchor="middle" class="title">How It Works — No Hold Music, Ever</text>
+            <rect class="card" x="80" y="70" width="740" height="90"/>
+            <text x="120" y="110" class="step">1) We Answer</text>
+            <text x="120" y="140" class="sub">24/7 friendly AI picks up first ring</text>
+            <line x1="450" y1="160" x2="450" y2="200" class="arrow"/>
+            <rect class="card" x="80" y="200" width="740" height="90"/>
+            <text x="120" y="240" class="step">2) We Handle It</text>
+            <text x="120" y="270" class="sub">Book appointments, answer FAQs, update insurance</text>
+            <line x1="450" y1="290" x2="450" y2="330" class="arrow"/>
+            <rect class="card" x="80" y="330" width="740" height="90"/>
+            <text x="120" y="370" class="step">3) You See It</text>
+            <text x="120" y="400" class="sub">Confirmed bookings show up in your EMR</text>
+            <line x1="450" y1="420" x2="450" y2="460" class="arrow"/>
+            <rect class="card" x="80" y="460" width="740" height="90"/>
+            <text x="120" y="500" class="step">4) Always Compliant</text>
+            <text x="120" y="530" class="sub">HIPAA-aware flows; PHI handled via secure, BAA-covered systems</text>
+          </svg>
         </div>
       </div>
     </section>
@@ -89,6 +110,21 @@
       </div>
     </section>
 
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <p class="sub">End-to-end front-office coverage so your clinicians can focus on care.</p>
+        <ul class="services">
+          <li>Call answering (24/7)</li>
+          <li>Appointment booking & rescheduling</li>
+          <li>Outbound reminders & information gathering</li>
+          <li>EMR write-back (real-time updates)</li>
+          <li>Practice, non-healthcare FAQs & directions</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- DIFFERENTIATION -->
     <section id="compare" class="section alt">
       <div class="container">
@@ -103,7 +139,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Avg Cost/Minute</td><td>$0.50–$0.70</td><td>$1.15–$1.45</td></tr>
+              <tr><td>Avg Cost/Minute</td><td>$0.65–$0.95</td><td>$1.15–$1.95</td></tr>
               <tr><td>24/7 Availability</td><td>Included</td><td>Extra after-hours</td></tr>
               <tr><td>EMR/EHR Integration</td><td>Real-time write-back</td><td>Manual entry or delayed</td></tr>
               <tr><td>Hold Times</td><td>None</td><td>Common</td></tr>
@@ -123,7 +159,7 @@
           <article class="card">
             <h3>Starter</h3>
             <p class="mins"><strong>500</strong> minutes / mo</p>
-            <p class="price">$349 <span class="per">($0.70/min)</span></p>
+            <p class="price">$475 <span class="per">($0.95/min)</span></p>
             <ul>
               <li>24/7 AI receptionist</li>
               <li>Basic FAQs</li>
@@ -133,7 +169,7 @@
           <article class="card">
             <h3>Growth</h3>
             <p class="mins"><strong>1,000</strong> minutes / mo</p>
-            <p class="price">$599 <span class="per">($0.60/min)</span></p>
+            <p class="price">$850 <span class="per">($0.85/min)</span></p>
             <ul>
               <li>EMR updates</li>
               <li>Appointment booking</li>
@@ -143,7 +179,7 @@
           <article class="card">
             <h3>Pro</h3>
             <p class="mins"><strong>2,500</strong> minutes / mo</p>
-            <p class="price">$1,349 <span class="per">($0.54/min)</span></p>
+            <p class="price">$1,875 <span class="per">($0.75/min)</span></p>
             <ul>
               <li>Eligibility checks</li>
               <li>Advanced FAQs</li>
@@ -153,7 +189,7 @@
           <article class="card">
             <h3>Enterprise</h3>
             <p class="mins"><strong>5,000</strong> minutes / mo</p>
-            <p class="price">$2,495 <span class="per">($0.50/min)</span></p>
+            <p class="price">$3,250 <span class="per">($0.65/min)</span></p>
             <ul>
               <li>SLA & on-call escalation</li>
               <li>Custom reporting</li>
@@ -161,7 +197,40 @@
             </ul>
           </article>
         </div>
-        <p class="note">Need &gt; 5,000 minutes? <a href="#contact">Contact Sales</a> for custom pricing.</p>
+        <p class="note">Need &gt; 5,000 minutes? <a href="#contact">Contact Sales</a> — volume pricing available.</p>
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section id="outcomes" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Built for 5–10 Physician Practices</h2>
+        <p class="sub">Solve the staffing and satisfaction crunch while cutting cost per minute.</p>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="num">4.4<span class="unit">min</span></div>
+            <div class="cap">Avg. hold time with human-only centers</div>
+          </div>
+          <div class="stat">
+            <div class="num">60<span class="unit">% </span></div>
+            <div class="cap">Typical staffing coverage at peak hours</div>
+          </div>
+          <div class="stat">
+            <div class="num">8<span class="unit">min</span></div>
+            <div class="cap">Avg. time to schedule by phone</div>
+          </div>
+          <div class="stat">
+            <div class="num lt">≤5<span class="unit">% </span></div>
+            <div class="cap">Abandon rate target for top centers</div>
+          </div>
+        </div>
+        <ul class="benefits">
+          <li>Lower patient wait times → higher satisfaction</li>
+          <li>AI handles routine + reminders; staff focus on higher-value work</li>
+          <li>Real-time EMR write-back reduces after-call work</li>
+          <li>Outbound reminders cut no-shows and task backlog</li>
+          <li>Employee engagement improves when phones aren’t on fire</li>
+        </ul>
       </div>
     </section>
 

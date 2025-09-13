@@ -1,6 +1,6 @@
 
 document.getElementById('y').textContent = new Date().getFullYear();
-// Optional: smooth scroll
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', e=>{
     const id=a.getAttribute('href').slice(1);
