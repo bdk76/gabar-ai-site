@@ -97,18 +97,7 @@ table.compare{width:100%;border-collapse:collapse}
 
 
 /* === Flow graphic: bigger + hover === */
-.flow-graphic{
-  display:block;
-  width:110%;              /* allow to spill slightly beyond its grid column */
-  max-width:1400px;        /* ~2x compared to previous 860px cap */
-  height:auto;
-  margin:0 auto;
-  transform-origin:center;
-  transition:transform 220ms ease, filter 220ms ease;
-  will-change:transform, filter;
-  /* subtle shadow all the time for depth */
-  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));
-}
+
 
 /* Hover polish (only when hover is supported) */
 @media (hover: hover) and (pointer: fine){
@@ -125,10 +114,19 @@ table.compare{width:100%;border-collapse:collapse}
 
 /* Mobile friendliness */
 @media (max-width:980px){
-  .flow-graphic{ width:100%; max-width:900px; }
+  
 }
-
 
 /* Wordmark spans for two-color 'GabarAI' */
 .brand-dark{ color:#000; font-weight:800; letter-spacing:0.2px; }
 .brand-teal{ color:var(--accent); font-weight:800; letter-spacing:0.2px; }
+
+/* Authoritative rule for hero diagram (PNG) */
+.flow-graphic {
+  width: 100%;
+  height: auto;
+  max-width: 3200px;
+  display: block;
+  margin: 0 auto;
+}
+.hero-art { overflow: visible; }
