@@ -10,7 +10,9 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .section.alt{background:#f8fafc}
 .section-title{font-size:32px;font-weight:800;margin:0 0 24px}
 .small{font-size:14px;color:var(--muted)}
-.icp-banner{margin-top:10px;color:var(--muted);font-size:14px}
+.icp-banner{margin-top:10px;color:var(--muted);font-size:14px
+  font-size: 18px;
+}
 
 /* Header */
 .site-header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
@@ -35,7 +37,9 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .hero .sub{font-size:18px;color:var(--sub)}
 .cta-row{display:flex;gap:12px;margin:16px 0 8px; justify-content:center}
 .trust-bullets{list-style:none;padding:0;margin:8px 0 0;display:flex;gap:18px;color:var(--muted);justify-content:center}
-.voice-note{margin-top:6px;color:var(--muted);font-size:14px}
+.voice-note{margin-top:6px;color:var(--muted);font-size:14px
+  font-size: 18px;
+}
 .hero-art svg{max-width: 6400px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
 
 /* Steps */
@@ -82,7 +86,7 @@ table.compare{width:100%;border-collapse:collapse}
 /* Responsive */
 @media (max-width: 6400px;
   width:110%;              /* allow to spill slightly beyond its grid column */
-  max-width: 6400px;        /* ~2x compared to previous 860px cap */
+  max-width: 
   height:auto;
   margin:0 auto;
   transform-origin:center;
@@ -107,4 +111,21 @@ table.compare{width:100%;border-collapse:collapse}
 
 /* Mobile friendliness */
 @media (max-width: 6400px; max-width: 6400px; }
+}
+
+
+/* Clean rebuilt rule for the hero diagram */
+.flow-graphic {
+  width: 100%;
+  max-width: 6400px; /* 2x from prior build */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transform-origin: center;
+  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));
+}
+
+
+.trust-bullets li {
+  font-size: 18px;
 }
