@@ -20,7 +20,7 @@ if(form){
     const phone = (fd.get('phone')||'').trim();
     const email = (fd.get('email')||'').trim();
     if(!name || !company || !phone || !email){ alert('Please complete all fields.'); return; }
-    const subject = encodeURIComponent('Demo Request — Gabar AI');
+    const subject = encodeURIComponent('Demo Request — GabarAI');
     const body = encodeURIComponent(`Name: ${name}\nCompany: ${company}\nPhone: ${phone}\nEmail: ${email}`);
     window.location.href = `mailto:info@gabar.ai?subject=${subject}&body=${body}`;
   });

@@ -2,6 +2,7 @@
 :root{
   --bg:#ffffff; --ink:#0f172a; --sub:#334155; --muted:#64748b;
   --line:#e5e7eb; --brand:#0b5fff; --brand-d:#0a4fe0; --accent:#14b8a6;
+  --gabar-blue:#4a90e2; --ai-blue:#7dd3fc;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif}
@@ -10,7 +11,11 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .section.alt{background:#f8fafc}
 .section-title{font-size:32px;font-weight:800;margin:0 0 24px}
 .small{font-size:14px;color:var(--muted)}
-.icp-banner{margin-top:10px;color:var(--muted);font-size:14px}
+.sub{font-size:18px;color:var(--sub);margin-top:10px}
+
+/* GabarAI Brand Colors */
+.gabar-text{color:var(--gabar-blue);font-weight:inherit}
+.ai-text{color:var(--ai-blue);font-weight:inherit}
 
 /* Header */
 .site-header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
@@ -18,7 +23,6 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .brand{display:flex;align-items:center;gap:10px}
 .brand .logo{font-weight:800;font-size:20px;letter-spacing:0.3px}
 .brand .brandmark{width:36px;height:36px;object-fit:contain}
-.brand .accent{color:var(--accent)}
 .nav-links a{margin-left:16px;text-decoration:none;color:var(--ink);font-weight:600}
 .nav-links .btn{margin-left:20px}
 
@@ -34,8 +38,8 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
 .hero .sub{font-size:18px;color:var(--sub)}
 .cta-row{display:flex;gap:12px;margin:16px 0 8px; justify-content:center}
-.trust-bullets{list-style:none;padding:0;margin:8px 0 0;display:flex;gap:18px;color:var(--muted);justify-content:center}
-.voice-note{margin-top:6px;color:var(--muted);font-size:14px}
+.trust-bullets{list-style:none;padding:0;margin:12px 0 0;display:flex;gap:18px;color:var(--muted);justify-content:center;font-size:14px}
+.trust-bullets li{font-size:14px}
 .hero-art svg{max-width:860px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
 
 /* Steps */
@@ -44,20 +48,21 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .step .icon{font-size:28px;margin-bottom:6px}
 .step h3{margin:6px 0}
 
-/* Comparison */
+/* Comparison - Center aligned */
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:#fff;margin:0 auto}
 table.compare{width:100%;border-collapse:collapse}
-.compare th,.compare td{padding:14px;border-bottom:1px solid var(--line)}
+.compare th,.compare td{padding:14px;border-bottom:1px solid var(--line);text-align:center}
 .compare thead th{background:#f1f5f9;text-align:center}
-.compare td{ text-align:left }
 
 /* Pricing */
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;justify-items:center}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;width:100%}
+.card .plan-name{font-size:24px;font-weight:800;margin:8px 0}
 .card .mins{margin:8px 0;color:var(--muted)}
-.card .price{font-size:24px;margin:6px 0}
+.card .price{font-size:24px;margin:6px 0;font-weight:700}
 .card .per{font-size:13px;color:var(--muted)}
-.card ul{margin:8px 0 0 18px;line-height:1.7;text-align:left; display:inline-block}
+.card .plan-features{margin:12px 0 0;padding:0 0 0 20px;line-height:1.7;text-align:left;list-style-position:outside}
+.card .plan-features li{margin:4px 0}
 
 /* Outcomes */
 .subhead{font-weight:800;margin:28px 0 12px;color:#0f172a}
