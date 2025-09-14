@@ -5,7 +5,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif}
-.container{max-width: 3200px;margin:0 auto;padding:0 20px;text-align:center}
+.container{max-width: 6400px;margin:0 auto;padding:0 20px;text-align:center}
 .section{padding:72px 0}
 .section.alt{background:#f8fafc}
 .section-title{font-size:32px;font-weight:800;margin:0 0 24px}
@@ -36,7 +36,7 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .cta-row{display:flex;gap:12px;margin:16px 0 8px; justify-content:center}
 .trust-bullets{list-style:none;padding:0;margin:8px 0 0;display:flex;gap:18px;color:var(--muted);justify-content:center}
 .voice-note{margin-top:6px;color:var(--muted);font-size:14px}
-.hero-art svg{max-width: 3200px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
+.hero-art svg{max-width: 6400px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
 
 /* Steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;justify-items:center}
@@ -71,18 +71,18 @@ table.compare{width:100%;border-collapse:collapse}
 .matrix .outcome{background:#f9fafb;font-weight:600}
 
 /* Contact */
-.intake{max-width: 3200px;margin:12px auto 0;text-align:left}
+.intake{max-width: 6400px;margin:12px auto 0;text-align:left}
 .intake .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 .intake input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px}
 .intake button{display:block;margin:10px auto 0}
-@media(max-width: 3200px;padding:20px 0;background:#fff}
+@media(max-width: 6400px;padding:20px 0;background:#fff}
 .foot{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
 .foot nav a{color:var(--muted);text-decoration:none;margin-left:14px}
 
 /* Responsive */
-@media (max-width: 3200px;
+@media (max-width: 6400px;
   width:110%;              /* allow to spill slightly beyond its grid column */
-  max-width: 3200px;        /* ~2x compared to previous 860px cap */
+  max-width: 6400px;        /* ~2x compared to previous 860px cap */
   height:auto;
   margin:0 auto;
   transform-origin:center;
@@ -106,5 +106,5 @@ table.compare{width:100%;border-collapse:collapse}
 }
 
 /* Mobile friendliness */
-@media (max-width: 3200px; max-width: 3200px; }
+@media (max-width: 6400px; max-width: 6400px; }
 }
