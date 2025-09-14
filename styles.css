@@ -3,13 +3,9 @@
   --bg:#ffffff; --ink:#0f172a; --sub:#334155; --muted:#64748b;
   --line:#e5e7eb; --brand:#0b5fff; --brand-d:#0a4fe0; --accent:#14b8a6;
 }
-/* Reusable brand wordmark spans */
-.brand-dark { color: #000; font-weight: 800; letter-spacing: 0.2px; }
-.brand-teal { color: var(--accent); font-weight: 800; letter-spacing: 0.2px; }
-
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif}
-.container{max-width:1100px;margin:0 auto;padding:0 20px;text-align:center}
+.container{max-width: 3200px;margin:0 auto;padding:0 20px;text-align:center}
 .section{padding:72px 0}
 .section.alt{background:#f8fafc}
 .section-title{font-size:32px;font-weight:800;margin:0 0 24px}
@@ -40,7 +36,7 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:I
 .cta-row{display:flex;gap:12px;margin:16px 0 8px; justify-content:center}
 .trust-bullets{list-style:none;padding:0;margin:8px 0 0;display:flex;gap:18px;color:var(--muted);justify-content:center}
 .voice-note{margin-top:6px;color:var(--muted);font-size:14px}
-.hero-art svg{max-width:860px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
+.hero-art svg{max-width: 3200px; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 24px rgba(15,23,42,0.08);}
 
 /* Steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;justify-items:center}
@@ -75,42 +71,26 @@ table.compare{width:100%;border-collapse:collapse}
 .matrix .outcome{background:#f9fafb;font-weight:600}
 
 /* Contact */
-.intake{max-width:720px;margin:12px auto 0;text-align:left}
+.intake{max-width: 3200px;margin:12px auto 0;text-align:left}
 .intake .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 .intake input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px}
 .intake button{display:block;margin:10px auto 0}
-@media(max-width:560px){ .intake .row{grid-template-columns:1fr} .intake{text-align:center} }
-
-/* Footer */
-.site-footer{border-top:1px solid var(--line);padding:20px 0;background:#fff}
+@media(max-width: 3200px;padding:20px 0;background:#fff}
 .foot{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
 .foot nav a{color:var(--muted);text-decoration:none;margin-left:14px}
 
 /* Responsive */
-@media (max-width: 980px){
-  .hero-grid{grid-template-columns:1fr}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width: 560px){
-  .steps,.cards,.stats-grid{grid-template-columns:1fr}
-  .matrix .row{grid-template-columns:1fr}
-  .nav-links a{display:none}
-}
-
-
-/* === Flow graphic: bigger + hover === */
-.flow-graphic{
-  display:block;
-  width: 100%;              /* allow to spill slightly beyond its grid column */
-  max-width: 100%;        /* ~2x compared to previous 860px cap */
+@media (max-width: 3200px;
+  width:110%;              /* allow to spill slightly beyond its grid column */
+  max-width: 3200px;        /* ~2x compared to previous 860px cap */
   height:auto;
   margin:0 auto;
   transform-origin:center;
+  transition:transform 220ms ease, filter 220ms ease;
   will-change:transform, filter;
   /* subtle shadow all the time for depth */
-  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));}
+  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));
+}
 
 /* Hover polish (only when hover is supported) */
 @media (hover: hover) and (pointer: fine){
@@ -126,6 +106,5 @@ table.compare{width:100%;border-collapse:collapse}
 }
 
 /* Mobile friendliness */
-@media (max-width:980px){
-  .flow-graphic{ width:100%; max-width:900px; }
+@media (max-width: 3200px; max-width: 3200px; }
 }
