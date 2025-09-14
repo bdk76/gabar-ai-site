@@ -3,6 +3,10 @@
   --bg:#ffffff; --ink:#0f172a; --sub:#334155; --muted:#64748b;
   --line:#e5e7eb; --brand:#0b5fff; --brand-d:#0a4fe0; --accent:#14b8a6;
 }
+/* Reusable brand wordmark spans */
+.brand-dark { color: #000; font-weight: 800; letter-spacing: 0.2px; }
+.brand-teal { color: var(--accent); font-weight: 800; letter-spacing: 0.2px; }
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif}
 .container{max-width:1100px;margin:0 auto;padding:0 20px;text-align:center}
@@ -99,16 +103,14 @@ table.compare{width:100%;border-collapse:collapse}
 /* === Flow graphic: bigger + hover === */
 .flow-graphic{
   display:block;
-  width:110%;              /* allow to spill slightly beyond its grid column */
-  max-width:1400px;        /* ~2x compared to previous 860px cap */
+  width: 100%;              /* allow to spill slightly beyond its grid column */
+  max-width: 100%;        /* ~2x compared to previous 860px cap */
   height:auto;
   margin:0 auto;
   transform-origin:center;
-  transition:transform 220ms ease, filter 220ms ease;
   will-change:transform, filter;
   /* subtle shadow all the time for depth */
-  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));
-}
+  filter: drop-shadow(0 6px 18px rgba(15,23,42,0.10));}
 
 /* Hover polish (only when hover is supported) */
 @media (hover: hover) and (pointer: fine){
